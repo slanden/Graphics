@@ -67,9 +67,6 @@ int main()
 	//create shader
 	Shader shader("./shaders/simpleShader.vert", "./shaders/simpleShader.frag");
 
-	//projection matrix
-	//glm::mat4 projection = glm::ortho(0.0f, static_cast<GLfloat>(800), 0.0f, static_cast<GLfloat>(600));
-
 
 	///drawing
 	//mesh
@@ -85,12 +82,12 @@ int main()
 	};
 
 #pragma region tinyobj
-	////load obj
-	//std::vector<tinyobj::shape_t> shapes;
-	//std::vector<tinyobj::material_t> materials;
+	//load obj
+	std::vector<tinyobj::shape_t> shapes;
+	std::vector<tinyobj::material_t> materials;
 
-	//std::string err;
-	//bool ret = tinyobj::LoadObj(shapes, materials, err, "./models/bunny.obj");
+	std::string err;
+	bool ret = tinyobj::LoadObj(shapes, materials, err, "./models/bunny.obj");
 
 	////create buffers for obj
 	//void createOpenGLBuffers(std::vector<tinyobj::shape_t>&shapes);
