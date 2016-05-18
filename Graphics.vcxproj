@@ -119,12 +119,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="perlin.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="dep\bin\shaders\PerlinNoise.frag" />
+    <None Include="dep\bin\shaders\PerlinNoise.vert" />
     <None Include="dep\bin\shaders\simpleShader.frag" />
     <None Include="dep\bin\shaders\simpleShader.vert" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ObjModel.h" />
+    <ClInclude Include="Perlin.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
